@@ -10,12 +10,17 @@
 
 <body>
     <?php
-    //the cycle will work when the cycle of the cycle
-    //is equally true 
+    // the cycle will work when the cycle of the cycle
+    // is equally true 
     while (2 + 2 == 4) {
         echo "эта надпись выводится";
+        break;
     }
 
+    // $i = 1;
+    // while ($i <= 10) {
+    //     echo $i++;
+    // }
     ?>
 </body>
 
