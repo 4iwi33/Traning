@@ -10,7 +10,14 @@
 
 <body>
     <?php
-    
+    switch ($a) {
+        case 1:
+            echo "A equally 1";
+            break;
+        case 2:
+            echo "A equally 2";
+            break;
+    }
     ?>
 </body>
 
