@@ -13,9 +13,17 @@
     // the cycle will work when the cycle of the cycle
     // is equally true 
     while (2 + 2 == 4) {
-        echo "эта надпись выводится";
+        echo "эта надпись выводится" . "<br>";
         break;
     }
+
+
+    $i = 1;
+
+    do {
+        echo $i;
+        $i++;
+    } while ($i < 6);
 
     // $i = 1;
     // while ($i <= 10) {
