@@ -9,6 +9,9 @@
 </head>
 
 <body>
+    <!-- Когда пользователь заполняет форму выше и нажимает кнопку отправки,
+ данные формы отправляются для обработки в файл PHP с именем 
+ "welcome.php". Данные формы отправляются методом HTTP POST. -->
     Welcome <?php echo $_POST["name"]; ?><br>
     Your email address is: <?php echo $_POST["email"]; ?>
 </body>
