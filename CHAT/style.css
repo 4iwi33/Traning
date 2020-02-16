@@ -1,0 +1,16 @@
+.even {
+    padding: 5px;
+    background-color: rgb(155, 216, 155);
+    border-radius: 1em;
+    height: 30px;
+    width: 300px;
+}
+
+.odd {
+    border-radius: 1em;
+    padding: 5px;
+    background-color: rgb(159, 159, 172);
+    height: 30px;
+    width: 300px;
+
+}

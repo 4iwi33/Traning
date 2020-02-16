@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="1">
+    <link rel="stylesheet" href="style.css">
+    <title>index_php</title>
+</head>
+
+<body>
+    <?php
+    $mes_arr = file('text.txt');
+    foreach ($mes_arr as $value) {
+        $buf = explode(':', $value);
+        echo "<div class=''>$buf[2] : $buf[3]</div>";
+        // echo "<div class = '" . (($key % 2) ? 'odd' : 'even') . "'>$buf[1] : $buf[2] </div>";
+    }
+
+
+
+    ?>
+</body>
+
+</html>
