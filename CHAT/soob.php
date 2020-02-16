@@ -12,7 +12,7 @@
     <form action='?' method="POST">
         <input type="text" value="<?= $_POST['userName'] ?>" name='userName'>
         <input type="text" name='for'>
-        <input class="submit" type="submit" value="OK">
+        <input type="submit" type="submit" value="OK">
     </form>
     <?
     // print_r($_SERVER);

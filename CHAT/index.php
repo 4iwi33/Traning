@@ -18,7 +18,7 @@
         echo "<div class = '" . (($key % 2) ? 'odd' : 'even') . "'>$buf[1] : $buf[2] </div>";
     }
 
-
+    
 
     ?>
 </body>
