@@ -10,14 +10,14 @@
 
 <body>
     <form action='?' method="POST">
-        <input type="text" value="<?= $_POST['userName'] ?>" name='userName'>
+        <input type="text" name="UserName" value="<?= !empty($_POST['UserName']) ? $_POST['UserName']: "" ?>">
         <input type="text" name='for'>
         <input type="submit" type="submit" value="OK">
     </form>
-    <?
+    <?php
     // print_r($_SERVER);
     if (!empty($_POST['for'])) {
-        file_put_contents('text.txt', $_SERVER['REMOTE_ADDR'] . $_SERVER['HTTP_USER_AGENT'] . ": " . $_POST['userName'] . ":" . $_POST['for'] . "\n", FILE_APPEND);
+        file_put_contents('text.txt', $_SERVER['SERVER_ADDR'] . ":" . $_POST['UserName'] . ": " . $_POST['for'] . "\n", FILE_APPEND);
     }
 
     ?>

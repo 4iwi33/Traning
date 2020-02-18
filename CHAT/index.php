@@ -11,11 +11,12 @@
 </head>
 
 <body>
-    <?
+    <?php
     $mes_arr = file('text.txt');
     foreach ($mes_arr as $key => $value) {
         $buf = explode(':', $value);
-        echo "<div class = '" . (($key % 2) ? 'odd' : 'even') . "'>$buf[1] : $buf[2] </div>";
+        // echo"<div class = 'odd' : 'even'> $buf[1] :
+         echo "<div class = '" . (($key % 2) ? 'odd' : 'even') . "'>$buf[1] : $buf[2]</div>";
     }
 
     
