@@ -1,20 +1,2 @@
-fff: fff
-rrrr: rrr
-fff: fff
-hi: hi
-hi: ggh
-nick: hello
-mark: hi
-mark: how are you ?
-mark: how are you ?
-mark: how are you ?
-mark: how are you ?
-mark: hp
-nick: what ?
-nick: g
-127.0.0.1: nick:hi
-127.0.0.1: mark:w?
-127.0.0.1: mark :hey
-127.0.0.1Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36: nick:33
-127.0.0.1Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36: mark:whats'up ?
-127.0.0.1:bro: hello
+127.0.0.1:Bro: Hello
+127.0.0.1:Nick: Whats'up men ?
