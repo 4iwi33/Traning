@@ -4,18 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>else</title>
 </head>
 
 <body>
     <?php
-    //example with else
-    if (3 < 1) {
-        echo "эта часть никогда не выведтся потомучто false";
+    $a = 31;
+
+    if ($a < 30) {
+
+        echo "$a меньше 30"; //не выводится потомучто false
     } else {
-        echo "а эта часть выведится"; //это верное значение 3 больше 1
+        echo "$a больше 30";//выводтся потомучто true
     }
+
+
     ?>
 </body>
 

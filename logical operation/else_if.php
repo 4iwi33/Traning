@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>else_if</title>
+    <title>else</title>
 </head>
 
 <body>
-    <?php 
-    //хорошй пример else if
-    if (4 > 4) {   //это не верное 
-        echo "4 больше, чем 4";
-    } elseif (4 == 4) { //это верное
-        echo "4 равен 4";
-    } else { //это не верное
-        echo "4 меньше, чем 4";
+    <?php
+    $a = 50;
+
+    if ($a < 30) {
+        echo "$a меньше 30"; //не выводится потомучто false
+    } elseif ($a >= 50) {
+        echo "$a больше или равно 50";// true
+    } else {
+        echo "$a больше 30"; //не выводится потомучто false
     }
+
+
     ?>
 </body>
 
