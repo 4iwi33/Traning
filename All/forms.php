@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form name="test" action="chek.php" method="post">
+    <form name="name" action="chek.php" method="post">
         <label>Имя:</label><br>
         <input type="text" name="name" placeholder="Имя"><br>
         <label>Email:</label><br>
