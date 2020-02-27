@@ -8,7 +8,7 @@ var_dump($_GET);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GET</title>
+    <title>get</title>
 </head>
 
 <body>
