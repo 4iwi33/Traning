@@ -9,7 +9,7 @@
 
 <body>
     <?php
-    $str = 'test string end';
+    $str = "test string end\n";
     preg_match('/end$/', $str, $match);//проверим заканчивается ли строчка со слова с символом"$" 
     var_dump($match);
     ?>
