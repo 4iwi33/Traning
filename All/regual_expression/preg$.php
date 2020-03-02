@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>preg$</title>
+    <title>$</title>
 </head>
 
 <body>
     <?php
-    $str = "test string end\n";
-    preg_match('/end$/', $str, $match);//проверим заканчивается ли строчка со слова с символом"$" 
+    $str = "test string end";
+    //проверим заканчивается ли строчка со слова с символом"$" 
+    preg_match('/end$/', $str, $match);
     var_dump($match);
     ?>
 </body>

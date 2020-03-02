@@ -11,7 +11,6 @@
 
     <?php
     $str = 'test string test test test';
-    // preg_match('/test/',$str);
     //preg_match — Выполняет проверку на соответствие регулярному выражению
     //            ('/что ищем/'),($где ищем)
     if (preg_match('/test/', $str)) { //проверяем существование и выводим
