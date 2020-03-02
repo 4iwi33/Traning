@@ -13,7 +13,7 @@
     $str = 'test string test test test';
     // preg_match('/test/',$str);
     //preg_match — Выполняет проверку на соответствие регулярному выражению
-    preg_match('/^string/', $str, $match);//проверим наинается ли строчка сол слова с"^" 
+    preg_match('/^test/', $str, $match);//проверим наинается ли строчка со слова с символом"^" 
     var_dump($match);
 
     ?>
