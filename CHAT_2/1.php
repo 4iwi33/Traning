@@ -1,4 +1,4 @@
 <?php
-echo date();
+echo date("Y/m/d");
 
 ?>
