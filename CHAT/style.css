@@ -1,16 +1,24 @@
-.even {
-    padding: 5px;
-    background-color: rgb(155, 216, 155);
-    border-radius: 1em;
-    height: 30px;
-    width: 300px;
-}
 
-.odd {
-    border-radius: 1em;
+.even{
     padding: 5px;
-    background-color: rgb(159, 159, 172);
-    height: 30px;
-    width: 300px;
+    margin-bottom: 10px;
+    border-radius: 1em;
+    background-color: rgb(238, 179, 179);
+    height: 2rem;
+    width: 30%;
+}
+.odd{
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 1em;
+    background-color: rgb(189, 192, 236);
+    height: 2rem;
+    width: 30%;
+    
+}
+.n{
+    color: rgb(8, 6, 8);
+    font-size: 0.8rem;
+    
 
 }
