@@ -5,7 +5,7 @@ INSERT INTO test
 VALUES('Alex', 'Programmer', '2050-04-04', 'test@mail.ru');
 --Сдесь задали значение каждому столбцу
 
---добавим  все данные
+--добавим  не все данные
 INSERT INTO test 
     (id, name, email) 
 VALUES('3', 'Gosha', 'dodik@mail.ru');
@@ -29,3 +29,17 @@ VALUES
     ('5', 'Bob', 'dodya@mail.com', 'Codder', '2030-03-03'),
     ('6', 'John', 'dodya2@mail.com', 'Codder', '2030-03-03'),
     ('7', 'Mike', 'dodya3@mail.com', 'Codder', '2030-03-03');
+
+--Добавление сразу нескольких столбцов с данными
+INSERT INTO test
+    (id, name, email, bio, birth)
+VALUES
+    ('1', 'Bob', 'dodya@mail.com', 'Codder', '2030-03-03'),
+    ('2', 'John', 'dodya2@mail.com', 'Codder', '2030-03-03'),
+    ('3', 'Mike', 'dodya3@mail.com', 'Codder', '2030-03-03'),
+    ('4', 'John', 'dodya2@mail.com', 'Codder', '2030-03-03'),
+    ('5', 'John', 'dodya2@mail.com', 'Codder', '2030-03-03'),
+    ('6', 'John', 'dodya2@mail.com', 'Codder', '2030-03-03'),
+    ('7', 'John', 'dodya2@mail.com', 'Codder', '2030-03-03'),
+    ('8', 'John', 'dodya2@mail.com', 'Codder', '2030-03-03'),
+    ('9', 'John', 'dodya2@mail.com', 'Codder', '2030-03-03');
