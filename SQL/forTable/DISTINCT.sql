@@ -1,4 +1,4 @@
 --Оператор "DISTINCT" данные только из выбранного поля/столбца
 
-SELECT DISTINCT  name --выведем только из name
+SELECT DISTINCT  name --выведем только из name без повторяющихся названий
 FROM test;            --из таблицы test
