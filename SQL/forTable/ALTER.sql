@@ -1,11 +1,16 @@
---Оператор "ALTER TABLE" используется для добавления,
--- удаления или изменения столбцов в существующей таблице.
-ALTER TABLE test --test в какой таблице
+--Оператор "ALTER TABLE" используется для добавления,удаления или изменения столбцов
+-- в существующей таблице.
 --Оператор "ADD" добавить 
 --"pass" название столбца который создаём   
- ADD pass VARCHAR(32);
+ALTER TABLE test
+ADD pass VARCHAR(32);
 
- --Удаление 
- ALTER TABLE test 
- --"DROP COLUMN" удаление столбца и указываем какой 
- DROP COLUMN pass;
+ --УДАЛЕНЕ
+
+ --Оператор "DROP COLUMN" удаление столбца и указываем какой 
+ALTER TABLE test
+DROP COLUMN pass;
+ 
+ --Оператор "CHANGE" меняет значение
+ALTER TABLE test 
+CHANGE birth birth DATE NOT NULL;
