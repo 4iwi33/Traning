@@ -24,3 +24,4 @@ AND id <4;      --и id меньше четырёх
 SELECT *                       --выведем всё
 FROM test                      --в таблице test  
 WHERE name = 'Bobik' OR id = 4;--где name равно 'Bobik' или id равно четырём
+
