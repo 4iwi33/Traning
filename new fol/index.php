@@ -23,7 +23,7 @@
     $select = mysqli_query($db, "SELECT id,short FROM testtable");
     while ($row = mysqli_fetch_array($select)) 
     {
-        echo $row;
+        echo $row . "<br>";
     }
 
     ?>
