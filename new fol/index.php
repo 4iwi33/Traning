@@ -15,18 +15,19 @@
     $dbase = 'test';
 
     $db = mysqli_connect($dbhost, $dbuser, $dbpass) or die("error to connect");
-    
-    if (!$db) 
-    {
+
+    if (!$db) {
         die("error to connect");
     }
     mysqli_select_db($db, $dbase) or die("error to connect");
-    $select = mysqli_query($db, "SELECT id,short FROM testtable");
-    while ($row = mysqli_fetch_array($select)) 
-    {
-        echo $row . "<br>";
+    //Оператор "LIMIT" позволяет вывести указанное число строк из таблицы.
+    //записывается всегда в конце запроса.
+    $select = mysqli_query($db, "SELECT id,short FROM testtable LIMIT 5");
+    while ($row = mysqli_fetch_array($select)) {
+        echo $row[1] . "<br>";
     }
 
+    echo "Page: 1 2 3";
     ?>
 </body>
 
