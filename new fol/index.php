@@ -20,9 +20,17 @@
         die("error to connect");
     }
     mysqli_select_db($db, $dbase) or die("error to connect");
+    $select1 = mysqli_query($db, "SELECT COUNT(*) FROM testtable");
+    if (!$select1) die('Error');
+    $row1 = mysqli_fetch_array($select1);   
+    $count_post = $row1[0]; 
+
     //Оператор "LIMIT" позволяет вывести указанное число строк из таблицы.
     //записывается всегда в конце запроса.
-    $select = mysqli_query($db, "SELECT id,short FROM testtable LIMIT 5");
+    $select = mysqli_query($db, "SELECT id,short FROM testtable ORDER BY id DESC     LIMIT 5");
+
+    echo $count_post;
+
     while ($row = mysqli_fetch_array($select)) {
         echo $row[1] . "<br>";
     }
