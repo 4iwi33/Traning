@@ -15,6 +15,7 @@
     $dbase = 'test';
 
     $db = mysqli_connect($dbhost, $dbuser, $dbpass) or die("error to connect");
+    
     if (!$db) 
     {
         die("error to connect");
