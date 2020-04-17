@@ -1,5 +1,5 @@
 <?php
-require_once 'Car.php'; //подключили
+require_once 'Car.php'; //подключили так же можно "include"
 
 // создали объект
 $car1 = new Car;
