@@ -1,6 +1,6 @@
 <?php
-include("Room.php");
+include("Room.php"); //соеденили
 
-$object = new Room();
+$object = new Room(); // создали объект
 
-$object->getColor();
+$object->getColor(); // выведем метод "getColor"
