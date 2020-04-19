@@ -1,6 +1,8 @@
 <?php
 include("classes.php");
 
+// $this - переменная 
+
 $user1 = new Lox();
 $user1->name = "Alex"; // обращаемся к свойству "name"  укажем его
 $user1->getName(); // метод getName
