@@ -7,13 +7,13 @@ class Lox
     public $email;
     public $city;
 
-    public function getName()
+    public function getName() // метод
     {
         echo $this->name;
         $this->test();
     }
 
-    public function test()
+    public function test() // метод
     {
         echo "Test";
     }
