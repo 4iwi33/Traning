@@ -15,3 +15,5 @@ echo Room::$location;
 echo "<br>";
 
 Room::sayWelcom();
+
+
