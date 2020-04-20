@@ -12,7 +12,8 @@ class User
 
     function getInfo()
     {
-        return "{$this->name}". "{$this->pass}". "{$this->email}". "{$this->city}";
+        $information = "{$this->name}". "{$this->pass}". "{$this->email}". "{$this->city}";
+        return $information;
     }
 }
 
@@ -24,7 +25,15 @@ class Moderator extends User // класс Moderator наследует клас
 {
     public $info;
     public $rights;
+
+    
+        function __construct($name, $pass, $email, $city, $info, $rights)
+    {
+        parent::__construct($name, $pass, $email, $city);
+        $this->info = $info;
+        $this->rights = $rights;        
+    }
 }
 
-$moder = new Moderator("Alex", "12345", "alex@mail.com", "Minsk");
+$moder = new Moderator("Alex", "12345", "alex@mail.com", "Minsk", "Mod", "True");
 echo $moder->getInfo();
