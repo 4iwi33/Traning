@@ -18,7 +18,7 @@ class User
 }
 
 $obj = new User("Ivan", "54321", "alex@mail.com", "Moscow");
-echo $obj->getInfo();
+// echo $obj->getInfo();
 
 // "extends" - наследование
 class Moderator extends User // класс Moderator наследует класс User
@@ -32,6 +32,13 @@ class Moderator extends User // класс Moderator наследует клас
         parent::__construct($name, $pass, $email, $city);
         $this->info = $info;
         $this->rights = $rights;        
+    }
+
+    function getInfo()
+    {
+        $information = parent::getInfo();
+        $information .= "{$this->info}". "{$this->rights}";
+        return $information;
     }
 }
 
