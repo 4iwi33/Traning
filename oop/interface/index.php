@@ -26,3 +26,7 @@ class Test implements FirstInterface, SecondInterface  // класс Test имп
         echo $this->status;
     }
 }
+
+$user1 = new Test; //создаём экземпляр класса
+$user1->getStatus();
+$user1->getName();
