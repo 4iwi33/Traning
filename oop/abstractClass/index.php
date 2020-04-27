@@ -8,13 +8,13 @@ abstract class User
     abstract public function getStatus();
 }
 
-class Admin extends User
+class Admen extends User
 {
     public function getStatus()
     {
-        echo "Admin";
+        echo "Admen";
     }
 }
 
-$user1 = new Admin;
+$user1 = new Admen;
 $user1->getStatus();
