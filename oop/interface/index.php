@@ -11,6 +11,11 @@ interface SecondInterface
     public function getStatus();
 }
 
+interface ThirdInterface extends FirstInterface, SecondInterface
+{
+    public function getName();
+}
+
 class Test implements FirstInterface, SecondInterface  // класс Test имплементирует класс FirstInterface 
 {
     public $name = "Alex";
