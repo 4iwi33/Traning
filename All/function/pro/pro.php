@@ -2,8 +2,7 @@
 function sum($a, $b) //создаём имя переменной sum 
 {
     $sum = $a + $b; 
-    //выводим
-    echo "Suma a+b=" . $sum; 
+    echo "Suma a+b=" . $sum;     //выводим
 }
 
 //вызываем функцю
