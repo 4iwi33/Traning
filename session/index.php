@@ -1,24 +1,11 @@
 <?php
 session_start();
-?>
 
-<!DOCTYPE html>
-<html lang="en">
+// isset — Определяет, была ли установлена переменная значением, отличным от NULL
+$num = (isset($_SESSION["num"])) ? $_SESSION["num"] : 0;
+$num++;
+$_SESSION["num"] = $num;
+echo "Пользователь обновил страницу $num раз";
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+// session_destroy — Уничтожает все данные сессии
 
-<body>
-    <?php
-    $_SESSION["favcolor"] = "red";
-    $_SESSION["favpage"] = "home";
-
-    echo $_SESSION["favcolor"];
-    echo $_SESSION["favpage"];
-    ?>
-</body>
-
-</html>
