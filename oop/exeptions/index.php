@@ -1,5 +1,5 @@
 <?php
-$file = 'namespace/index.php';
+$file = 'indexcopy.php';
 // print_r($file);
 
 try {
