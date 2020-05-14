@@ -1,6 +1,6 @@
 <?php
 
-namespace exc1;
+namespace exc1; // путь через папки
 
 class App
 {
