@@ -12,4 +12,4 @@ $app = new exc1\App(); // создали экземля класса
 
 echo "<br>";
 
-$appp = new exc2\App();
+$appp = new exc2\App(); // создали экземля класса
