@@ -33,5 +33,5 @@ class User
     }
 }
 
-$user1 = new User("Vadim ", "54321 ", "vadya@mail.com ", "Minsk ");
+$user1 = new User("Vadim ", "54321 ", "vadya@mail.com ", "Minsk "); //создали экземпляр класса
 echo $user1->getInfo();
