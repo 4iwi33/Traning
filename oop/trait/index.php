@@ -20,9 +20,9 @@ trait World
 
 class myHelloWorld
 {
-    use Hello, World;
+    use Hello, World; // тут используем наш трейт
 }
 
 $obj = new myHelloWorld();
-$obj->sayHello();
-$obj->sayWorld();
+$obj->sayHello(); // обращаемся к фукции sayHello
+$obj->sayWorld(); // обращаемся к фукции sayWorld
