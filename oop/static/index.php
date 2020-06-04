@@ -1,16 +1,32 @@
 <?php
 
-class Room
+class Room   // класс Room
 {
-    public static $location = "Внутри дома"; // статическое свойство
+    public static $location = "Внутри дома"; // публичное статическое свойство $location
+    // public static $loc = "Bro ";
 
-    public static function sayWelcome() // статическй метод
+    public static function sayWelcome() // вызываем статическй метод
     {
         echo "Hello это статческий метод";
     }
+
+    // public static function sayHolla()
+    // {
+    //     echo "Holla";
+    // }
 }
 
-echo Room::$location;
+// echo Room::$loc;
+
+// Room::sayHolla();
+// $myLoc = new Room();
+// echo $myLoc::$loc;
+// $myLoc::sayHolla();
+
+// echo "<br>";
+
+// обращаемся к свойству 
+echo Room::$location; // название класса(Room) и название свойства($location)
 
 echo "<br>";
 
@@ -25,4 +41,4 @@ echo $myRoom::$location; // обратимся к статитескому св�
 
 echo "<br>";
 
-$myRoom::sayWelcome();
+$myRoom::sayWelcome(); // обратимся к статичекому методу
