@@ -1,17 +1,28 @@
 <?php
 
-class Lol
+class Room
 {
-    public static $name; // статическое свойство
+    public static $location = "Внутри дома"; // статическое свойство
 
-    public static function hello()  // статическй метод
+    public static function sayWelcome() // статическй метод
     {
-        echo "Hello";
-        return self::$name;
+        echo "Hello это статческий метод";
     }
 }
-Lol::$name = "Alex"; // задали свйство значение
-echo Lol::$name;    //вывели
-echo Lol::hello(); //обращение
 
-//если в методе нет пееменой $this , то этот метод явл статическим
+echo Room::$location;
+
+echo "<br>";
+
+Room::sayWelcome();
+
+$myRoom = new Room(); // создали объект
+
+echo "<br>";
+echo "<br>";
+
+echo $myRoom::$location; // обратимся к статитескому свойтсву 
+
+echo "<br>";
+
+$myRoom::sayWelcome();
