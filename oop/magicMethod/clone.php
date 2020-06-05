@@ -1,21 +1,21 @@
 <?php
 
-class User 
+class User
 {
-    private $name;
+    private $name; // спецификатор свойство
     private $city;
     private $id;
 
-    function __construct($name, $city )
+    function __construct($name, $city)
     {
-        $this->name = $name;
+        $this->name = $name; // обращаемся к нашим свойствам
         $this->city = $city;
     }
     function setId($id)
     {
         $this->id = $id;
     }
-    
+
     public function __clone()
     {
         $this->id = 0;
