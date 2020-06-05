@@ -8,5 +8,5 @@ class User
     }
 }
 
-$obj = new User;
-$obj2 = clone $obj;
+$obj = new User; // создали обЪект класса
+$obj2 = clone $obj; // клонровали
