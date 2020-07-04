@@ -47,14 +47,6 @@ $objClassB = new B();
 $objClassB->nickname = 'Mark';
 $objClassB->Hello();
 
-
-
-
-
-
-
-
-
 class Xamlo
 {
     public function XamloFun()
