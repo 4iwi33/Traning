@@ -48,3 +48,21 @@ $objClassB->nickname = 'Mark';
 $objClassB->Hello();
 
 
+
+
+
+
+
+
+
+class Xamlo
+{
+    public function XamloFun()
+    {
+        $this->XamloFun = 'I am is Xamlo';
+        echo $this->XamloFun;
+    }
+}
+
+$xam = new Xamlo();
+$xam->XamloFun();
