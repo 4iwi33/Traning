@@ -1,5 +1,7 @@
 <?php
 
+// пример коструктора
+
 class MyConstruct
 {
     public $my;
