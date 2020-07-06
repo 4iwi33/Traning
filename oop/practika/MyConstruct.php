@@ -5,9 +5,6 @@ class MyConstruct
     public $my;
     public $name;
     public $isNick;
-    // public $a;
-    public $b;
-    public $c;
 
     function __construct($my, $name, $isNick)
     {

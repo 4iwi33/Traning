@@ -7,22 +7,22 @@ class Method
     public $email = "Емейл";
     public $city = "Город";
 
-    // public function Hello()
-    // {
-    //     echo "Hello {$this->name}"; // объявляем имя тут
-    // }
-    function getInfo()
+    public function Hello()
     {
-        return "{$this->name}" . "{$this->surname}";
+        echo "Hello {$this->name}"; // объявляем имя тут
     }
+    // function getInfo()
+    // {
+    //     return "{$this->name}" . "{$this->surname}";
+    // }
 }
 
 $admin = new Method();
 
-$admin->name = "Alexey ";
+// $admin->name = "Alexey ";
 
-// $admin->Hello();
+$admin->Hello();
 
-$admin->surname = "Petrov";
+// $admin->surname = "Petrov";
 
-echo "Пользователь: {$admin->getInfo()}";
+// echo "Пользователь: {$admin->getInfo()}";
