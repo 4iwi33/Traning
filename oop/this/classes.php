@@ -9,7 +9,7 @@ class Lox
 
     public function getName() // метод
     {
-        echo $this->name . "<br>";
+        echo $this->name . "\n";
         $this->test();
     }
 
