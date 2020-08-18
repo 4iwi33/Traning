@@ -14,6 +14,7 @@
         <input type="text" id="num2" value="0">
         <span>=</span>
         <span id="demo">0</span>
+        <input type="button" value="ok" id="res">
     </form>
 
     <script src="calc3.js"></script>
